@@ -15,6 +15,41 @@ html {
     --transition: all 0.3s ease-in-out;
 }
 
+/* resume button
+*/
+
+/* From Uiverse.io by cybrejon, scoped for resume button only */
+.resume-btn {
+  color: rgba(243, 236, 236, 0.692);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 0 20px rgba(56, 54, 54, 0.397);
+  background: white;
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 8px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.resume-btn:hover {
+  border-color: rgba(16, 15, 15, 0.623);
+  
+  box-shadow: 0 6px rgba(10, 10, 10, 0.623);
+  transform: translateY(-6px);
+}
+
+.resume-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -142,6 +177,10 @@ ul {
     background-color: #061557;
     transform: translateY(-7px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     border-color: rgba(16, 15, 15, 0.623);
+  
+  box-shadow: 0 6px rgba(4, 7, 218, 0.623);
+  transform: translateY(-6px);
 }
 
 .fade-in {
@@ -180,7 +219,7 @@ nav {
 }
 
 .logo {
-    background-color: #000;
+    background-color: #0f0505;
     font-size: 1.8rem;
     font-weight: bold;
     color: #3655d8;
@@ -188,7 +227,7 @@ nav {
     
 }
 .section{
-    color: #d5dadc;
+    color: #eceff0;
 }
 .nav-links {
     display: flex;
@@ -196,23 +235,24 @@ nav {
 }
 
 .nav-links a {
-    background-color: #0b0b0b;
+    background-color: #0c0b0b;
     border-radius: 5px;
-    color: blueviolet
+    color: rgb(49, 9, 225)
     font-weight: 500;
     transition: var(--transition);
 }
 
 .nav-links a:hover {
-    color:white
+    color:rgb(230, 227, 233)
 }
 
 .mobile-menu {
   
-    color: #0530f3;
+    color: #5605d9;
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background-color: black;
 }
 
 /* Hero Section */
