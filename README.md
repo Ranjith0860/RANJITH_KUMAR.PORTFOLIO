@@ -6,9 +6,9 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## 🖼️ Preview
 
-![Portfolio Preview](./screenshots/portfolio-preview.png)
+![Portfolio Preview](./images/images/imggg.png)
 
-> 📌 Make sure to save your screenshot as `portfolio-preview.png` inside a `screenshots` folder in your project directory.
+>
 
 ---
 
@@ -31,11 +31,8 @@ This portfolio is designed to reflect my personality as a developer. It is clean
 | Category       | Technologies Used                                |
 |----------------|---------------------------------------------------|
 | Frontend       | HTML5, CSS3, JavaScript, React.js                |
-| Backend        | Node.js (for possible contact form integration)  |
-| Database       | MongoDB (for projects or user data if applicable)|
+
 | Design         | Responsive Design, Modern UI/UX Principles        |
 
----
 
-## 📂 Folder Structure
 
