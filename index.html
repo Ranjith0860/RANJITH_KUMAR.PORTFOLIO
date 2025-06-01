@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- Header & Navigation -->
+     <button id="scrollUpBtn" onclick="scrollToTop()">⬆ Top</button>
     <header id="header">
         <div class="container">
             <nav>
@@ -431,6 +432,16 @@
     }
   });
 });
+const scrollBtn = document.getElementById("scrollUpBtn");
+
+window.addEventListener("scroll", () => {
+  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
     </script>
 </body>
 </html>

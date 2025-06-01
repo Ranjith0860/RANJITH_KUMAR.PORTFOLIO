@@ -285,6 +285,26 @@ nav {
     max-width: 600px;
     animation: fadeIn 1.3s ease-out;
 }
+#scrollUpBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 18px;
+  font-size: 1.2rem;
+  background: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+#scrollUpBtn:hover {
+  transform: scale(1.1);
+}
 
 
 
