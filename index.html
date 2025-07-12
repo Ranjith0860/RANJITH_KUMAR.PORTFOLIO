@@ -88,39 +88,37 @@
       </div>
     </div>
 
-    <!-- 🎯 Infinite Scrolling Skills -->
-    <div class="skills-section fade-in">
-      <h2 class="W">My Skills</h2>
-      <div class="scroll-wrapper">
-        <div class="skills">
-          <!-- Repeat this block twice for seamless infinite scroll -->
-          <div class="skills-track">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Responsive Design</span>
-            <span class="skill-tag">Tailwind</span>
-            <span class="skill-tag">Express.js</span>
-          </div>
-          <div class="skills-track">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Responsive Design</span>
-            <span class="skill-tag">Tailwind</span>
-            <span class="skill-tag">Express.js</span>
-          </div>
-        </div>
+   <div class="skills-section fade-in">
+  <h2 class="W">My Skills</h2>
+  <div class="scroll-wrapper" id="scrollContainer">
+    <div class="skills" id="skillsTrack">
+      <!-- Duplicate block for seamless scroll -->
+      <div class="skills-track">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Responsive Design</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">Express.js</span>
+      </div>
+      <div class="skills-track">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Responsive Design</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">Express.js</span>
       </div>
     </div>
-
   </div>
+</div>
+
 </section>
 
 
@@ -469,6 +467,33 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
+
+  const scrollContainer = document.getElementById("scrollContainer");
+
+  let scrollSpeed = 1; // Adjust speed here
+  let isPaused = false;
+
+  function autoScroll() {
+    if (!isPaused) {
+      scrollContainer.scrollLeft += scrollSpeed;
+      // Reset if scrolled full width (loop)
+      if (
+        scrollContainer.scrollLeft >=
+        scrollContainer.scrollWidth / 2
+      ) {
+        scrollContainer.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(autoScroll);
+  }
+
+  scrollContainer.addEventListener("mouseenter", () => (isPaused = true));
+  scrollContainer.addEventListener("mouseleave", () => (isPaused = false));
+
+  autoScroll(); // Start auto-scroll
+
 
     </script>
 </body>

@@ -382,43 +382,34 @@ nav {
 .skills-section {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 2px soli
+  border-top: 2px solid #ccc;
 }
 
-/* Scroll wrapper hides overflow */
 .scroll-wrapper {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   border-radius: 20px;
   background-color: #121212;
   padding: 12px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   margin-top: 10px;
   position: relative;
-}
-.W{
-    text-align: center;
+  scroll-behavior: smooth;
+  white-space: nowrap;
 }
 
-/* Skills container moves left */
 .skills {
   display: flex;
   width: max-content;
-  animation: scroll-left 20s linear infinite;
-}
-
-/* Duplicate track for seamless loop */
-.skills-track {
-  display: flex;
   gap: 16px;
 }
 
-/* Skill tags */
 .skill-tag {
-  background-color: #e0e7ff;
+  background-color: #1c3ca4;
   padding: 8px 16px;
   border-radius: 30px;
   font-weight: 500;
-  color: #1e3a8a;
+  color: #dbdde2;
   flex-shrink: 0;
   white-space: nowrap;
   transition: background-color 0.3s ease;
@@ -427,16 +418,6 @@ nav {
 .skill-tag:hover {
   background-color: #c7d2fe;
   cursor: pointer;
-}
-
-/* Infinite scroll keyframes */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 /* Responsive */
