@@ -378,47 +378,7 @@ nav {
   min-width: 280px;
 }
 
-/* Skills Section */
-.skills-section {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 2px solid #ccc;
-}
 
-.scroll-wrapper {
-  overflow-x: auto;
-  overflow-y: hidden;
-  border-radius: 20px;
-  background-color: #121212;
-  padding: 12px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin-top: 10px;
-  position: relative;
-  scroll-behavior: smooth;
-  white-space: nowrap;
-}
-
-.skills {
-  display: flex;
-  width: max-content;
-  gap: 16px;
-}
-
-.skill-tag {
-  background-color: #1c3ca4;
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-weight: 500;
-  color: #dbdde2;
-  flex-shrink: 0;
-  white-space: nowrap;
-  transition: background-color 0.3s ease;
-}
-
-.skill-tag:hover {
-  background-color: #c7d2fe;
-  cursor: pointer;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -432,16 +392,130 @@ nav {
     max-width: 300px;
   }
 
-  .skills {
-    animation-duration: 30s;
+ 
+}
+/* ===== Base Styling ===== */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.skills-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #444;
+  overflow: hidden;
+}
+
+/* ===== Scroll Wrapper ===== */
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 12px 0;
+  position: relative;
+}
+
+/* ===== Auto-scrolling Track ===== */
+.scroll-track {
+  display: inline-flex;
+  gap: 16px;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+  padding-left: 100%; /* start off-screen to the right */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
   }
-.about-content{
-    text-align: center;
+  100% {
+    transform: translateX(-50%);
+  }
 }
-W{
-    text-align: center;
+
+/* ===== Skill Tags ===== */
+.skill-tag {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 16px;
 }
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #6b8afd, #a5bfff);
+  color: #121212;
+  cursor: pointer;
 }
+
+/* ===== Scrollbar Styling (in case overflow is seen) ===== */
+.scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .skill-tag {
+    font-size: 14px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+  }
+
+  .skill-tag:hover {
+    background: #c7d2fe;
+    color: #121212;
+  }
+
+  .scroll-track {
+    gap: 12px;
+    animation-duration: 20s;
+  }
+
+  .skills-section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-tag {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .scroll-track {
+    animation-duration: 18s;
+  }
+}
+
 
 
 /* Projects Section */
