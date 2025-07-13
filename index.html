@@ -472,28 +472,8 @@ function scrollToTop() {
 
   const scrollContainer = document.getElementById("scrollContainer");
 
-  let scrollSpeed = 1; // Adjust speed here
-  let isPaused = false;
-
-  function autoScroll() {
-    if (!isPaused) {
-      scrollContainer.scrollLeft += scrollSpeed;
-      // Reset if scrolled full width (loop)
-      if (
-        scrollContainer.scrollLeft >=
-        scrollContainer.scrollWidth / 2
-      ) {
-        scrollContainer.scrollLeft = 0;
-      }
-    }
-    requestAnimationFrame(autoScroll);
-  }
-
-  scrollContainer.addEventListener("mouseenter", () => (isPaused = true));
-  scrollContainer.addEventListener("mouseleave", () => (isPaused = false));
-
-  autoScroll(); // Start auto-scroll
-
+  
+    
 
     </script>
 </body>
