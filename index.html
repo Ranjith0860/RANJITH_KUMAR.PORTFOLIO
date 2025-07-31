@@ -1,119 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranjith Portfolio</title>
-    <link rel="icon" type="image/png" href="/images/images/logo.png">
-   <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/images/porttt.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header & Navigation -->
-     <button id="scrollUpBtn" onclick="scrollToTop()">⬆ Top</button>
+    <button id="scrollUpBtn" onclick="scrollToTop()">⬆ Top</button>
     <header id="header">
         <div class="container">
             <nav>
                 <a href="#about" class="logo">Ranjith Kumar</a>
                 <div class="mobile-menu">☰</div>
                 <ul class="nav-links">
-                    <li><a href="#hero" class="btn">Home</a></li>
-                    <li><a href="#about" class="btn">About</a></li>
-                    <li><a href="#projects" class="btn">Projects</a></li>
-                    <li><a href="#certificates" class="btn">Certificates</a></li>
-                    <li><a href="#contact" class="btn">Contact</a></li>
-                    <li><a 
-  href="images/images/ranjith_Resume.pdf" 
-  class="btn" 
-  download="ranjith_Resume.pdf"
->
-  <svg
-    viewBox="0 0 256 256"
-    height="20"
-    width="20"
-    xmlns="http://www.w3.org/2000/svg"
-    style="vertical-align: middle;"
-  >
-    <path
-      d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12"
-      fill="currentColor"
-    ></path>
-  </svg>
-  Download CV
-</a>
-
-
-
+                    <li><a href="#hero" class="nav-btn">Home</a></li>
+                    <li><a href="#about" class="nav-btn">About</a></li>
+                    <li><a href="#projects" class="nav-btn">Projects</a></li>
+                    <li><a href="#certificates" class="nav-btn">Certificates</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact</a></li>
+                    <li>
+                        <a href="images/images/ranjith_Resume.pdf" class="fancy-btn" download="ranjith_Resume.pdf">
+                            <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                                <path d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12" fill="currentColor"></path>
+                            </svg>
+                            Download CV
+                        </a>
                     </li>
                 </ul>
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <span class="icon-light">☀️</span>
+                    <span class="icon-dark">🌙</span>
+                </button>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-  <div class="container hero-container">
-    <div class="hero-text fade-in">
-      <h2><span style="color: bisque;">Hi, I'm Ranjith Kumar</span></h2>
-      <p>
-        A passionate web developer creating amazing digital experiences.
-        I specialize in front-end development, building responsive web applications,
-        and working with AI tools.
-      </p>
-      <div class="hero-buttons">
-  <a href="#projects" class="btn primary-btn">🚀 View My Work</a>
-  <a href="/images/images/ranjith  Resume.pdf" download="ranjith_Resume.pdf" class="btn download-btn">📄 Download CV</a>
-  <a href="#contact" class="btn outline-btn">📬 Contact Me</a>
-</div>
-
-    </div>
-
-    <div class="hero-image fade-in">
-      <img src="/images/images/profile-placeholder.jpg" alt="Ranjith Kumar" />
-    </div>
-  </div>
-</section>
-
+        <div class="container hero-container">
+            <div class="hero-text fade-in">
+                <h2><span class="highlight-text">Hi, I'm Ranjith Kumar</span></h2>
+                <p>
+                    A passionate web developer creating amazing digital experiences.
+                    I specialize in front-end development, building responsive web applications,
+                    and working with AI tools.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="fancy-btn primary-btn">🚀 View My Work</a>
+                    <a href="/images/images/ranjith  Resume.pdf" download="ranjith_Resume.pdf" class="fancy-btn download-btn">📄 Download CV</a>
+                    <a href="#contact" class="fancy-btn outline-btn">📬 Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="/images/images/porttt.png" alt="Ranjith Kumar" />
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-
-    <div class="about-content">
-      <img src="/images/images/WhatsApp Image 2024-09-27 at 09.48.44_fcca9d65.jpg" alt="Profile Photo" class="about-image fade-in">
-      <div class="about-text fade-in">
-        <h3>Who I Am</h3>
-        <p>Hi there! I'm a passionate web developer with a strong interest in creating beautiful, functional websites and applications.</p>
-        <p>My goal is to build digital solutions that not only look great but also provide an exceptional user experience.</p>
-      </div>
-    </div>
-
-  <!-- Skills Section -->
-<div class="skills-section fade-in">
-    <h2 class="section-title">My Skills</h2>
-    <div class="scroll-wrapper">
-      <div class="scroll-track">
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">MongoDB</span>
-        <span class="skill-tag">Responsive Design</span>
-        <span class="skill-tag">Tailwind</span>
-        <span class="skill-tag">Express.js</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Figma</span>
-        <!-- Duplicate for seamless infinite effect -->
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">React</span>
-      </div>
-    </div>
-  </div>
-</section>
-
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="/images/images/WhatsApp Image 2024-09-27 at 09.48.44_fcca9d65.jpg" alt="Profile Photo" class="about-image fade-in">
+                <div class="about-text fade-in">
+                    <h3>Who I Am</h3>
+                    <p>Hi there! I'm a passionate web developer with a strong interest in creating beautiful, functional websites and applications.</p>
+                    <p>My goal is to build digital solutions that not only look great but also provide an exceptional user experience.</p>
+                </div>
+            </div>
+            <!-- Skills Section -->
+            <div class="skills-section fade-in">
+                <h2 class="section-title">My Skills</h2>
+                <div class="scroll-wrapper">
+                    <div class="scroll-track">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Figma</span>
+                        <!-- Duplicate for seamless infinite effect -->
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
@@ -130,15 +114,10 @@
                         <p>A simple Fashion-Ecommerce-website where usere can login ,add to card,other features</p>
                         <div class="project-tags">
                             <span class="project-tag">html,css,JavaScript</span>
-                            
                         </div>
-                        
-                            
-                            <a href="https://github.com/Ranjith0860/fashion_Ecommerce-website-main" class="btn">Github link</a>
-                        
+                        <a href="https://github.com/Ranjith0860/fashion_Ecommerce-website-main" class="fancy-btn">Github link</a>
                     </div>
                 </div>
-                
                 <!-- Project 2 -->
                 <div class="project-card fade-in">
                     <div class="project-image">
@@ -149,15 +128,10 @@
                         <p>Where we can download the images according to catagories and add filter to image we can download</p>
                         <div class="project-tags">
                             <span class="project-tag">Html,css,JavaScript</span>
-                            
                         </div>
-                        
-                            
-                            <a href="https://ranjith0860.github.io/Image_gallery-codealpha/" class="btn">Github link</a>
-                        
+                        <a href="https://ranjith0860.github.io/Image_gallery-codealpha/" class="fancy-btn">Github link</a>
                     </div>
                 </div>
-                
                 <!-- Project 3 -->
                 <div class="project-card fade-in">
                     <div class="project-image">
@@ -165,17 +139,14 @@
                     </div>
                     <div class="project-info">
                         <h3>Network Intrusion Detection System</h3>
-                    <p>It was an clascification project which analysises the threads and data lekages..</p>
-                         <div class="project-tags">
+                        <p>It was an clascification project which analysises the threads and data lekages..</p>
+                        <div class="project-tags">
                             <h4>user interaces</h4>
                             <span class="project-tag">html</span>
                             <span class="project-tag">CSS3</span>
                             <span class="project-tag">JavaScript</span>
                         </div>
-                        
-                            <a href="https://github.com/Ranjith0860/NIDS-PROJECT" class="btn">Github link</a>
-                           
-                        
+                        <a href="https://github.com/Ranjith0860/NIDS-PROJECT" class="fancy-btn">Github link</a>
                     </div>
                 </div>
             </div>
@@ -196,12 +167,10 @@
                         <div class="certificate-info">
                             <h3 class="certificate-title">Python 3 Programming Certificate</h3>
                             <p class="certificate-issuer">Issued by :University of Michigan (Coursera)</p>
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/553ZD9HBDWMN" 
-                               class="btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/553ZD9HBDWMN" class="fancy-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="certificate-card fade-in">
                     <div class="certificate-content">
                         <div class="certificate-logo">
@@ -210,13 +179,10 @@
                         <div class="certificate-info">
                             <h3 class="certificate-title">Cloud computing</h3>
                             <p class="certificate-issuer">Issued by :Edx</p>
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/553ZD9HBDWMN" 
-                               class="btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/553ZD9HBDWMN" class="fancy-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
                         </div>
                     </div>
                 </div>
-                
-                
                 <!-- Certificate 2 -->
                 <div class="certificate-card fade-in">
                     <div class="certificate-logo">
@@ -224,26 +190,20 @@
                     </div>
                     <div class="certificate-info">
                         <h3> Software Engineering Basics for Everyone Certificate</h3>
-                        
                         <p>Issued: IBM</p>
-                        <a href="https://courses.edx.org/certificates/65f66ebbdd0847b4979a305415b8acd7" class="btn">View Certificate →</a>
+                        <a href="https://courses.edx.org/certificates/65f66ebbdd0847b4979a305415b8acd7" class="fancy-btn">View Certificate →</a>
                     </div>
                 </div>
-
-
-
                 <div class="certificate-card fade-in">
                     <div class="certificate-logo">
                         <img src="images/images/graduation_14879202.png" alt="Graduation Logo">
                     </div>
                     <div class="certificate-info">
                         <h3> NETWORKING CLOUD VIRTUAL INTERNSHIP CERTIFICATE</h3>
-                        
                         <p>Issued: IBM</p>
-                        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=10fa1c55bd7cd1770dd767501897c6ec" class="btn">View Certificate →</a>
+                        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=10fa1c55bd7cd1770dd767501897c6ec" class="fancy-btn">View Certificate →</a>
                     </div>
                 </div>
-                
                 <!-- Certificate 3 -->
                 <div class="certificate-card fade-in">
                     <div class="certificate-logo">
@@ -251,21 +211,18 @@
                     </div>
                     <div class="certificate-info">
                         <h3>PYTHON FULL STACK DEVELOPER VIRTUAL INTERNSHIP</h3>
-                        
                         <p>Issued:"Edu Skills Academy"</p>
-                        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=10fa1c55bd7cd1770dd767501897c6ec"class="btn">View Certificate →</a>
+                        <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=10fa1c55bd7cd1770dd767501897c6ec" class="fancy-btn">View Certificate →</a>
                     </div>
-
-                    </div>
+                </div>
                 <div class="certificate-card fade-in">
                     <div class="certificate-logo">
                         <img src="images/images/graduation_14879202.png" alt="Graduation Logo">
                     </div>
                     <div class="certificate-info">
                         <h3>SQL and Relational Databases 101 CERTIFICATE</h3>
-                        
                         <p>Issued:"IBM"</p>
-                        <a href="https://courses.cognitiveclass.ai/certificates/b11aef354eec4d0cb3bee61e0a65539f"class="btn">View Certificate →</a>
+                        <a href="https://courses.cognitiveclass.ai/certificates/b11aef354eec4d0cb3bee61e0a65539f" class="fancy-btn">View Certificate →</a>
                     </div>
                 </div>
             </div>
@@ -281,10 +238,7 @@
                     <h3>Let's Talk About Your Project</h3>
                     <p>I'm interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact me using the form.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
-                           
-                           
-                        </div>
+                        <div class="contact-item"></div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <p>ranjithkumar76748@gmail.com</p>
@@ -313,7 +267,7 @@
                             <label for="message">Message</label>
                             <textarea id="message" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="fancy-btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -329,12 +283,12 @@
                     <p>A passionate web developer focused on creating beautiful and functional websites and applications.</p>
                     <div class="social-links">
                         <a href="https://github.com/Ranjith0860">
-                            <img src="images/images/github.png" alt="GitHub Logo" class="log"> 
+                            <img src="images/images/github.png" alt="GitHub Logo" class="log">
                         </a>
                         <a href="https://www.linkedin.com/in/ranjith-kumar-thangallapally/">
-                            <img src="images/images/linkedin_2504923.png" alt="GitHub Logo" class="log"> </a>
-                        <a href="https://leetcode.com/u/ranjithkumar5817/"><img src="images/images/LeetCode_Sharing.png" alt="GitHub Logo" class="log"> </a>
-                       
+                            <img src="images/images/linkedin_2504923.png" alt="GitHub Logo" class="log">
+                        </a>
+                        <a href="https://leetcode.com/u/ranjithkumar5817/"><img src="images/images/LeetCode_Sharing.png" alt="GitHub Logo" class="log"></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -345,17 +299,13 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#certificates">Certificates</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="/images/images/ranjith  Resume.pdf" download="ranjith_Resume.pdf" class="bt">Download CV</a>
-                        </li>
+                        <li><a href="/images/images/ranjith  Resume.pdf" download="ranjith_Resume.pdf" class="fancy-btn">Download CV</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>connect</h3>
-                   
                     <form>
-                       
-                       <a href="mailto:ranjithkumar76748@gmil.com" class="btn">Send Email</a>
-                        
+                        <a href="mailto:ranjithkumar76748@gmil.com" class="fancy-btn">Send Email</a>
                     </form>
                 </div>
             </div>
@@ -367,16 +317,27 @@
 
     <!-- JavaScript -->
     <script>
-        
+        // Theme Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.setAttribute('data-theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+            }
+        });
+
         // Mobile Menu Toggle
         const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileMenu.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
         });
-        
+
         // Sticky Header
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
@@ -386,20 +347,20 @@
                 header.classList.remove('scrolled');
             }
         });
-        
+
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
-                
+
                 // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
@@ -407,10 +368,10 @@
                 }
             });
         });
-        
+
         // Fade-in Animation
         const fadeElements = document.querySelectorAll('.fade-in');
-        
+
         const fadeInObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -421,14 +382,14 @@
         }, {
             threshold: 0.3
         });
-        
+
         fadeElements.forEach(element => {
             fadeInObserver.observe(element);
         });
-        
+
         // Form Submission
         const contactForm = document.getElementById('contactForm');
-        
+
         if (contactForm) {
             contactForm.addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -438,36 +399,27 @@
             });
         }
 
-
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop,
-        behavior: "smooth"
-      });
-    }
-  });
-});
-const scrollBtn = document.getElementById("scrollUpBtn");
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+        const scrollBtn = document.getElementById("scrollUpBtn");
 
-window.addEventListener("scroll", () => {
-  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-});
+        window.addEventListener("scroll", () => {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-
-
-  const scrollContainer = document.getElementById("scrollContainer");
-
-  
-    
-
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
     </script>
 </body>
 </html>
